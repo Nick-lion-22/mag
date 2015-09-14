@@ -1,0 +1,77 @@
+
+/* Reset CSS Styles */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+:focus {
+    outline: 0;
+}
+body {
+    line-height: 1;
+    color: black;
+    background: white;
+}
+ol, ul {
+    list-style: none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+
+/* Our top-level styles */
+#wrapper {width:900px;margin:15px auto;border:1px solid #000;}
+.floatLeft {float:left;display:inline;}
+.floatRight {float:right;display:inline;}
+.clear {clear:both;}
+
+/* Header */
+#header {height:100px;background:#ebebeb;border-bottom:1px dashed #000;}
+#header .logo {width:200px;height:50px;margin:25px 0 0 25px;background-color:#bdbdbd;border:1px dashed #000;text-align:center;}
+#header .logo p {font:20px Arial;color:#fff;margin-top:12px;}
+#header .welcome {width:400px;font:17px Arial;margin:42px 0 0 25px;color:#474646;}
+
+
+/* Sidebar */
+#sidebar {width:200px;border-right:1px solid #000;}
+#sidebar h2 {margin:10px;font:bold 16px Arial;}
+#sidebar ul {margin:10px 10px 25px 10px;}
+#sidebar ul li {margin:0 0 7px 5px;font:13px Arial;}
+
+/* Content Area */
+#content {width:690px;}
+#content h2 {margin:10px;font:bold 16px Arial;}
+#content p {margin:10px;font:13px Arial;}
+
+/* Footer */
+#footer {width:900px;height:65px;border-top:1px dashed #000;clear:both;}
+#footer .copyright {width:200px;font:13px Arial;color:#474646;margin:25px 0 0 15px;}
+#footer ul {margin:25px 0 0 25px;float:left;}
+#footer ul li {margin-right:7px;float:left;display:inline;}
+#footer ul li a {font:13px Arial;color:#666;}

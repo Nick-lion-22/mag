@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <?php echo $this->getChildHtml('head'); ?>
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+        <?php echo $this->getChildHtml('header'); ?>
+        <?php echo $this->getChildHtml('test'); ?>
+    </div>
+    <div id="sidebar" class="floatLeft">
+        <?php echo $this->getChildHtml('sidebar'); ?>
+    </div>
+    <div id="content" class="floatLeft">
+        <?php echo $this->getChildHtml('content'); ?>
+    </div>
+    <div id="footer">
+        <?php echo $this->getChildHtml('footer'); ?>
+    </div>
+</div>
+</body>
+</html>

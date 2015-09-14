@@ -1,0 +1,37 @@
+<layout version="0.1.0">
+    <!--
+    Default layout, loads most of the pages
+    -->
+    <default translate="label" module="page">
+        <label>All Pages</label>
+        <block type="page/html" name="root" output="toHtml" template="page/vacancy-2columns.phtml">
+
+            <!-- Add Styles to Head -->
+            <block type="page/html_head" name="head" as="head" template="page/html/head.phtml">
+                <action method="addCss">
+                    <stylesheet>css/style.css</stylesheet>
+                </action>
+            </block>
+
+            <!-- Our Header -->
+            <block type="page/html_header" name="header" as="header" translate="label" template="page/html/header.phtml">
+                <label>Header</label>
+            </block>
+
+            <!-- Our Sidebar -->
+            <block type="catalog/navigation" name="sidebar" as="sidebar" translate="label">
+                <label>Sidebar</label>
+            </block>
+
+            <!-- Main Content Area -->
+            <block type="core/text_list" name="content" as="content" translate="label">
+                <label>Main Content Area</label>
+            </block>
+
+            <!-- The Footer -->
+            <block type="page/html_footer" name="footer" as="footer" template="page/html/footer.phtml">
+                <label>Footer</label>
+            </block>
+        </block>
+    </default>
+    </layout>
